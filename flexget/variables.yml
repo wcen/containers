@@ -1,0 +1,8 @@
+qbt:
+  host: qbittorrent
+  port: 8080
+  usr: ****
+  pwd: ****
+rss:
+  ttg: ****
+  mteam: ****
