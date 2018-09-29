@@ -15,4 +15,3 @@ __parameters__
 >MY_HOSTNAME: ddns domain  
 >MY_USER: dynu login user (usally e-mail or account)  
 >MY_PASS: can use encryption password  
-

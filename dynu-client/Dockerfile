@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:latest
 LABEL maintainer="cew1350@gmail.com"
 
 RUN \
