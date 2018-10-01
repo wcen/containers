@@ -1,7 +1,7 @@
 FROM alpine:latest
 LABEL maintainer="cew1350@gmail.com"
 
-ARG FLEXGET_VER="2.13.24"
+ARG FLEXGET_VER="2.14.24"
 
 ENV XDG_CONFIG_HOME=/config
 
