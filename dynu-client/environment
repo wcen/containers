@@ -1,0 +1,5 @@
+GET_IP_SERVER=http://ipecho.net/plain
+DYNU_API_SERVER=https://api.dynu.com/v2
+DYNU_API_KEY=
+DYNU_DOMAIN=
+WAIT_TIME=60

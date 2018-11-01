@@ -1,5 +1,4 @@
+docker stop dynu-client > /dev/null 2>&1 || true && docker rm -vf dynu-client > /dev/null 2>&1 || true
 docker run -d --restart=always --name dynu-client \
-  -e MY_HOSTNAME="" \
-  -e MY_USER='' \
-  -e MY_PASS="" \
+  --env-file ./environment \
   wcen/docker-dynu-client:latest

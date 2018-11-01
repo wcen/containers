@@ -1,10 +1,10 @@
-FROM alpine:latest
+FROM python:3.7.1-alpine3.8
 LABEL maintainer="cew1350@gmail.com"
 
 RUN \
-  apk update && \
-  apk add --no-cache \
-  curl
+  pip3 install \
+    requests
 
-COPY start.sh /tmp/start.sh
-ENTRYPOINT ["/tmp/start.sh"]
+ADD start.py /tmp/start.py
+ENTRYPOINT [ "python3" ]
+CMD [ "/tmp/start.py" ]
