@@ -13,10 +13,10 @@ command -v openssl
 
 if [[ $? == 0 ]]; then
   [[ -d "${PRI_KEY_DIR}" ]] || \
-  mkdir "${PRI_KEY_DIR}"
+  mkdir -p "${PRI_KEY_DIR}"
 
   [[ -d "${CERT_DIR}" ]] || \
-  mkdir "${CERT_DIR}"
+  mkdir -p "${CERT_DIR}"
 
   openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout "${PRI_KEY_DIR}/${KEY_NAME}" -out "${CERT_DIR}/${CERT_NAME}"
   # Diffie–Hellman key exchange
