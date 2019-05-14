@@ -1,7 +1,7 @@
 FROM alpine:latest
 LABEL maintainer="cew1350@gmail.com"
 
-ARG QBITTORRENT_VER="4.1.5"
+ARG QBITTORRENT_VER="4.1.6"
 ARG RASTERBAR_VER="1.1.9"
 
 ENV \
