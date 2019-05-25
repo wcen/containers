@@ -6,7 +6,6 @@ __docker run__
 
 ```sh
 bash docker-archisteamfarm.sh
-docker attach archisteamfarm
 ```
 
 __bot.json__
