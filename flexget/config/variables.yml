@@ -1,8 +1,13 @@
-qbt:
-  host: qbittorrent
+qbittorrent:
+  host: "qbittorrent"
   port: 8080
-  usr: ****
-  pwd: ****
-rss:
-  ttg: ****
-  mteam: ****
+  user: "admin"
+  password: "password"
+
+task:
+  ttg:
+    tag: ttg
+    rss: ''
+  mteam:
+    tag: mteam
+    rss: ''

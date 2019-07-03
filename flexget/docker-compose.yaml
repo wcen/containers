@@ -1,0 +1,19 @@
+---
+version: "3.7"
+services:
+  flexget:
+    build: ./build
+    image: wcen/docker-flexget:latest
+    container_name: flexget
+    restart: unless-stopped
+    volumes:
+      - "./config/config.yml:/config/flexget/config.yml"
+      - "./config/variables.yml:/config/flexget/variables.yml"
+    environment:
+      TZ: "Asia/Taipei"
+    networks:
+      - internal
+networks:
+  internal:
+    name: internal
+...

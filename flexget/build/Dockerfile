@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM python:3.7-alpine
 LABEL maintainer="cew1350@gmail.com"
 
-ARG FLEXGET_VER="2.14.24"
+ARG FLEXGET_VER="2.21.10"
 
 ENV XDG_CONFIG_HOME=/config
 
@@ -12,8 +12,7 @@ RUN \
     curl && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    tzdata \
-    py2-pip && \
+    tzdata && \
   echo "**** install flexget ****" && \
   mkdir -p /flexget-src && \
   curl -o /tmp/flexget-${FLEXGET_VER}.tar.gz -L "https://github.com/Flexget/Flexget/archive/${FLEXGET_VER}.tar.gz" && \
