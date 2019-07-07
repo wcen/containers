@@ -1,8 +1,8 @@
-FROM alpine:latest
+FROM alpine:3.10
 LABEL maintainer="cew1350@gmail.com"
 
 ARG QBITTORRENT_VER="4.1.6"
-ARG RASTERBAR_VER="1.1.9"
+ARG RASTERBAR_VER="1.1.13"
 
 ENV \
   XDG_CONFIG_HOME=/config \
@@ -58,6 +58,6 @@ RUN \
   rm -rf /tmp/*
 
 EXPOSE 8080 8999 8999/udp
-VOLUME /config /data /downloads /watch
+VOLUME [ "/config", "/data", "/downloads", "/watch" ]
 ADD start.sh /tmp/start.sh
 ENTRYPOINT [ "/tmp/start.sh" ]
